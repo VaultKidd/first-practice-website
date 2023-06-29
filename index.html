@@ -19,11 +19,11 @@
       </nav>
       <header>
         <div class="row">
-          <div>
+          <div class="home__desc">
             <h1>The History of Humanity</h1>
             <p class="subheader">
               Travel from the dawn of humanity's awakening, through the rise and
-              fall of civilizations through to the modern day
+              fall of civilizations to the modern day
             </p>
             <button>Explore</button>
           </div>
@@ -36,98 +36,118 @@
     <main>
       <section id="prehistoric">
         <h2>Prehistoric</h2>
-        <div class="section__desc">
-          <div class="section__desc--wrapper">
-            <p class="section__desc--para">
-              Humans or Homospaiens first arose around 300,000 years ago in
-              Africa. Over the next 100-125 thousand years, humans would wonder
-              around the Earth and settle in tribes across the continents as we
-              know them today. Early humans eventually learned to make tools out
-              of rocks and stones such as axes, spears and knives, and began
-              hunting things which in the past, used to hunt them.
-            </p>
-            <p class="section__desc--para">
-              Due to the new food available to humans through hunting and
-              gathering, we learned to use our brains more efficiently and
-              started developing things such as agriculture. Through agriculture
-              and irrigation, humans now had to worry less about daily survival,
-              and more about learning new things to expand our understanding of
-              the world. Agriculture eventually led to the formation of small
-              villages, and these small villages ended up being assimilated into
-              towns, which then needed someone to rule over them.
-            </p>
+        <div class="row">
+          <div class="section__desc">
+            <div class="section__desc--wrapper">
+              <p class="section__desc--para">
+                Humans or Homospaiens first arose around 300,000 years ago in
+                Africa. Over the next 100-125 thousand years, humans would
+                wonder around the Earth and settle in tribes across the
+                continents as we know them today. Early humans eventually
+                learned to make tools out of rocks and stones such as axes,
+                spears and knives, and began hunting things which in the past,
+                used to hunt them.
+              </p>
+              <p class="section__desc--para">
+                Due to the new food available to humans through hunting and
+                gathering, we learned to use our brains more efficiently and
+                started developing things such as agriculture. Through
+                agriculture and irrigation, humans now had to worry less about
+                daily survival, and more about learning new things to expand our
+                understanding of the world. Agriculture eventually led to the
+                formation of small villages, and these small villages ended up
+                being assimilated into towns, which then needed someone to rule
+                over them.
+              </p>
+            </div>
+            <figure class="prehistoric__img--wrapper">
+              <img src="./assets/tools.jpg" alt="Tools" />
+            </figure>
           </div>
-          <figure class="prehistoric__img--wrapper">
-            <img src="./assets/tools.jpg" alt="Tools" />
-          </figure>
         </div>
       </section>
       <section id="civilization">
-        <h2>Civilization</h2>
-        <figure>
-          <img src="./assets/civilizations.jpg" alt="Civilization" />
-        </figure>
-        <div>
-          <p>
-            Civilization as we know it first came around 3,000 years ago with
-            the rise of the Sumer in Mesapotamia. Which then spanned a whole
-            conglomerate of people following suit.
-          </p>
-          <p>
-            Over the next 5,000 years civilisations would rise and fall, with
-            many notable ones being the Ancient Egyptians, Indus Valley, China,
-            Ancient Greeks, Romans, Byzantines and many many more up until the
-            modern day. Civilisations would battle with each other over land,
-            resources and pride, and due to the decisions of many before us, we
-            are at this point today, with the technology and knowledge all
-            thanks to the civilisations and empires before us.
-          </p>
+        <h2 class="alt__color">Civilization</h2>
+        <div class="row">
+          <div class="section__desc">
+            <figure class="prehistoric__img--wrapper">
+              <img
+                class="civilization__img"
+                src="./assets/civilizations.jpg"
+                alt="Civilization"
+              />
+            </figure>
+            <div class="alt__color">
+              <p class="section__desc--para">
+                Civilization as we know it first came around 3,000 years ago
+                with the rise of the Sumer in Mesapotamia. Which then spanned a
+                whole conglomerate of people following suit.
+              </p>
+              <p class="section__desc--para">
+                Over the next 5,000 years civilisations would rise and fall,
+                with many notable ones being the Ancient Egyptians, Indus
+                Valley, China, Ancient Greeks, Romans, Byzantines and many many
+                more up until the modern day. Civilisations would battle with
+                each other over land, resources and pride, and due to the
+                decisions of many before us, we are at this point today, with
+                the technology and knowledge all thanks to the civilisations and
+                empires before us.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="modern-day">
         <div>
           <h2>Modern Day</h2>
-          <div>
-            <p>
-              Modern day has placed us in the information age. Media and the
-              internet allows us to access million of pieces of information
-              which has been collected throughout ancient history as well as new
-              information created every single day. This age is seeing us
-              accelerate faster and faster into the unknown, and with many
-              modern bright minds driving us towards even greater cultural and
-              technological development, the world ahead of us is whatever we
-              decide to make it, as long as we don't drive ourselves to
-              extinction, as many advanced and ingenious civilizations before
-              us, have.
-            </p>
+          <div class="row">
+            <div class="section__desc">
+              <p class="section__desc--para">
+                Modern day has placed us in the information age. Media and the
+                internet allows us to access million of pieces of information
+                which has been collected throughout ancient history as well as
+                new information created every single day. This age is seeing us
+                accelerate faster and faster into the unknown, and with many
+                modern bright minds driving us towards even greater cultural and
+                technological development, the world ahead of us is whatever we
+                decide to make it, as long as we don't drive ourselves to
+                extinction, as many advanced and ingenious civilizations before
+                us, have.
+              </p>
+              <figure class="prehistoric__img--wrapper">
+                <img
+                  class="modern__img"
+                  src="./assets/modern.jpg"
+                  alt="Modern Day"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="alt__color">
         <h2>Contact</h2>
         <h3>Have a suggestion to add? Reach out!</h3>
         <form action="">
           <label for="Email">Email</label>
-          <input type="text" placeholder="john@example.com" />
+          <input type="email" placeholder="john@example.com" />
           <label for="suggestion">Suggestions</label>
           <textarea
             type="area"
             placeholder="Add the Industrial age!"
           ></textarea>
+          <button>Submit</button>
         </form>
-        <button>Submit</button>
       </section>
     </main>
 
     <footer>
-      <img src="./assets/evo.png" alt="Evolution" />
-      <div>
-        <ul>
-          <li><a href="#prehistoric">Prehistoric</a></li>
-          <li><a href="#civilization">Civilization</a></li>
-          <li><a href="#modern-day">Modern Day</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <img class="footer__logo" src="./assets/evo.png" alt="Evolution" />
+      <div class="footer__links">
+          <a class="footer__link" href="#prehistoric">Prehistoric</a>
+          <a class="footer__link" href="#civilization">Civilization</a>
+          <a class="footer__link" href="#modern-day">Modern Day</a>
+          <a class="footer__link" href="#contact">Contact</a>
       </div>
       <p>Copyright The History of Humanity</p>
     </footer>

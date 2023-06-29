@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -65,6 +65,14 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+}
+#prehistoric,
+#civilization,
+#modern-day,
+#contact,
+footer{
+    padding: 48px 0px;
 }
 
 /*
@@ -72,9 +80,7 @@ li{
 PREHISTORIC
 
 */
-
-#prehistoric{
-    padding: 48px 0px;
+#modern{
     background-color: white;
 }
 
@@ -91,7 +97,6 @@ h2{
 }
 
 .prehistoric__img--wrapper{
-    width: 40%;
     padding: 0px 24px;
 }
 
@@ -108,6 +113,7 @@ img{
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 24px;
+    padding: 0px 24px;
 }
 
 /*
@@ -115,3 +121,164 @@ img{
 Civilization
 
 */
+
+#civilization{
+    background-color: black;
+}
+
+.alt__color{
+    color: white;
+}
+
+.civilization__img{
+    width: 400px;
+}
+
+/*
+
+Modern-Day
+
+*/
+
+#modern-day{
+    background-color: white;
+}
+
+.modern__img{
+    width: 600px;
+}
+
+/*
+
+Contact
+
+*/
+
+#contact{
+    background-color:black;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+input,
+textarea{
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/*
+
+Footer
+
+*/
+
+footer{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo{
+max-width: 120px;
+margin-bottom: 16px;
+}
+
+.footer__links{
+margin-bottom: 32px;
+}
+
+.footer__link{
+    padding: 0px 16px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 728px) {
+.row{
+    flex-direction: column;
+}
+
+.home__desc{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.subheader{
+    text-align: center;
+    font-size: 28px;
+}
+
+ul{
+    display: none;
+}
+
+.section__desc{
+    flex-direction: column;
+}
+
+.section__desc--wrapper{
+    width: 100%;
+}
+
+.prehistoric__img--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#civilization{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#civilization .section__desc{
+    flex-direction: column-reverse;
+}
+.civilization__img{
+    width: 100%;
+}
+#modern-day{
+    display: flex;
+    flex-direction: column;
+}
+.modern__img{
+    width: 100%;
+}
+
+footer{
+    padding: 48px 24px;
+}
+.footer__logo{
+max-width: 300px;
+}
+
+.footer__link{
+    padding: 0 8px;
+    font-size: 12px;
+}
+
+.footer__links{
+    margin-bottom: 24px;
+}
+}
